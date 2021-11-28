@@ -39,7 +39,7 @@ async def start(client, message):
     bot_username = starkbot.username
     firstname = message.from_user.first_name
     user_id = message.from_user.id
-    starttext = f"`Hello, {firstname} ! Nice To Meet You, \nWell I Am {bot_name}, \nA Powerful Assistant Bot To Talk And Do Many Things For My Master!`. \n\nPowered By [Friday Userbot](t.me/FridayOT)"
+    starttext = f"`Hello, {firstname} ! Nice To Meet You, \nWell I Am {bot_name}, \nA Powerful Assistant Bot To Talk And Do Many Things For My Master!`. \n\nPowered By [SINNER](t.me/lifeinsinn)"
     mypic = Config.ASSISTANT_START_PIC
     if user_id not in all_user_s:
         await client.send_photo(
@@ -47,7 +47,7 @@ async def start(client, message):
             mypic,
             starttext,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Help Me ❓", url="t.me/Fridayot")]]
+                [[InlineKeyboardButton("Help Me ❓", url="t.me/xproject13")]]
             ),
         )
         kok = await check_user(user_id)
